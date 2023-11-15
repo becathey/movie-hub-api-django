@@ -5,8 +5,8 @@ class Movie(models.Model):
     title = models.CharField(max_length=100, blank=True, default="")
     director = models.CharField(max_length=100)
     year = models.IntegerField()
-    image = models.CharField(max_length=50)
-    description = models.CharField(max_length=500)
+    image = models.CharField(max_length=100)
+    description = models.CharField(max_length=800)
     genre = models.CharField(max_length=255)
     rating = models.FloatField()
 
