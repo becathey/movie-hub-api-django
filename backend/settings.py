@@ -97,7 +97,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Whitelist React port
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000'
+    'http://localhost:3000',
+    'https://movie-hub-central.netlify.app'
 ]
 CORS_ALLOWED_ALL_ORIGINS = False
 
