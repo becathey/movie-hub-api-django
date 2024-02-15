@@ -35,6 +35,24 @@ SECRET_KEY='<create-and-add-your-secret-key-here>'
 
 The .env file should be added to a .gitignore file to protect your secret key.
 
+## Apply Migrations
+
+To apply the migrations to the database, run:
+
+```
+python manage.py migrate
+```
+
+## Create Superuser
+
+To create a superuser account for login, run:
+
+```
+python manage.py createsuperuser
+```
+
+Enter username, email, and password.
+
 ## Run the App
 
 To run the app in development mode, run:
@@ -43,7 +61,9 @@ To run the app in development mode, run:
 python manage.py runserver
 ```
 
-Open [http://localhost:8000](http://localhost:8000) in the browser to view the application.
+Open [http://localhost:8000/admin](http://localhost:8000/admin) in the browser, and add your movie data.
+
+Open [http://localhost:8000/movies](http://localhost:8000/movies) in the browser to see your movies.
 
 ## Deploy the App
 
